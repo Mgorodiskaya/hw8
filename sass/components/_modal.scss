@@ -1,0 +1,219 @@
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 100;
+    }
+  
+.is-hidden {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  
+.close-modal {
+    position: absolute;
+    margin-top: 8px;
+    margin-right: 8px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.1);
+    border-image: none;
+    cursor: pointer;
+    fill: black;
+    background-color:$title-white-color;
+    transition: fill 250ms linear;
+
+    &:hover {
+      fill:$accent-color;
+    }
+  }  
+  
+.modal-title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+   
+    color: #212121;
+  
+    margin-bottom: 12px;
+   }
+  
+.modal {
+    display: flex;
+    flex-direction: row-reverse;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    width: 528px; 
+    height: 581px;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 1);
+    z-index: 10;
+    transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    .backdrop.is-hidden &{
+      transform: translate(-50%, -50%) scale(0.5);
+      transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
+      }
+    }
+  
+  .contact-form {
+     width: 448px;
+     margin: 40px auto ;
+    }
+  
+  .user-form-input {
+    display: block;
+    width: 100%;
+    height: 40px;
+    border-radius: 4px; 
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(33, 33, 33, 0.2);
+    border-image: none;
+    outline: none;
+    padding-left: 40px;
+    transition-property: border-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:focus, &:hover {
+    cursor: pointer;
+    border-color:$accent-color;
+    outline: none;
+      }
+    }
+  
+  .user-form-label {
+  display: inline-block;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color:$text-color;
+  margin-bottom: 6px;
+  }
+   
+  .form-div{
+    position: relative;
+    margin-bottom: 10px;
+  }
+    
+  .label-icon{
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(50%);
+    fill: black;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+
+    &:hover, &:focus {
+      fill:$accent-color;
+    }
+
+    .user-form-input:hover + &,
+    .user-form-input:focus + &{
+      fill:$accent-color;
+    }
+  }
+     
+  .modal-submit-btn {
+  margin-left: 125px;
+  box-shadow: none;
+  @extend %btn;
+  &:hover {
+    color: #e4fa6a;
+    background-color: #0f1975;
+    border-color: #0f1975;
+    }
+  }
+  
+  .form-message {
+   width: 448px;
+   height: 120px;
+   resize: none;
+   padding: 12px 16px;
+   border: 1px solid rgba(33, 33, 33, 0.2);
+   border-radius: 4px;  
+   margin-bottom: 20px;
+   outline: none;
+   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
+
+   &::placeholder {
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+   } 
+
+   &:focus, &:hover {
+    cursor: pointer;
+    border-color:$accent-color;
+    outline: none;
+    }
+  }
+  
+  .checkbox {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+  
+  .agree-checkbox {  
+    display: flex;
+    align-items: center;
+     text-align: center; 
+    margin-bottom: 30px;
+  }
+  
+  .custom-checkbox {
+    display: inline-block;
+    width: 16px;
+    height: 15px;
+
+    .checkbox:not(:checked) + &{
+      background-image: url(../images/notcheck.svg);
+      }
+
+   .checkbox:checked + &{
+        background-image: url(../images/check.svg);
+      }
+   }
+    
+  .agree-text {
+    color:$text-color;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.71;
+    margin-left: 6px;
+    text-align: center;
+  }
+  
+  .contract {
+    display: inline-block;
+    color:$accent-color;
+    font-weight: 400;
+    line-height: 1.71;
+    text-decoration: underline;
+  }
+  
+   
+   
+    

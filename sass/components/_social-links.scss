@@ -1,0 +1,25 @@
+.social-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+   
+  
+    transition: background-color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+    
+    &:hover, &:focus{
+    background-color:$accent-color;
+     }
+  }
+  
+  .social-icon {
+       transition: fill cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+      
+      .social-link:hover &,
+      .social-link:focus &{
+        fill: white;
+      }
+   }
+  

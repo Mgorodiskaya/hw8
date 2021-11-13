@@ -1,0 +1,114 @@
+.footer {
+  background-color:$background-dark-color;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  &-container {
+    display: flex;
+  }
+}
+
+.footer-adress-map {
+  @extend %adress-link-map;
+  color:$title-white-color;
+  line-height: 1.71;
+
+  &:hover, &:focus{
+    @extend %accent-color-for-link-and-btn;
+  }
+}
+
+.footer-adress-link {
+  @extend %adress-link-map;
+  color:$text-color-dark-thema;
+  line-height: 1.71;
+  
+  &:hover, &:focus{
+    @extend %accent-color-for-link-and-btn;
+  }
+}
+
+.footer-logo {
+  color:white;
+  margin-bottom: 20px;
+  margin-right: 0;
+}
+
+.footer-list-item:not(:last-child){
+  margin-bottom: 9px;
+}
+
+.footer-adress{
+  margin-right: 70px;
+}
+
+.invite {
+  margin-top: 12px;
+}
+
+.footer-invite {
+@extend %text-in-footer;
+}
+
+.footer-social-list{
+display: flex;
+}
+
+.footer-social-link{
+  background-color: rgba(255, 255, 255, 0.1);
+  margin-right: 10px;
+  }
+
+.footer-social-icon {
+    fill:$title-white-color;
+   }
+
+.mailing {
+  justify-content: flex-end;
+  width: 570px;
+  margin-left: 93px;
+  margin-top: 12px;
+}
+
+.mailing-form {
+  display: flex;
+  align-items: flex-start;
+}
+
+.mailing-text {
+  @extend %text-in-footer;
+  display: block;
+} 
+
+.mailing-input {
+width: 358px;
+height: 50px;
+color: #EEE;
+border-width: 1px;
+border-style: solid;
+border-color: rgba(255, 255, 255, 0.3);
+border-image: none;
+
+border-radius: 4px;
+background-color:$background-dark-color;
+padding-left: 15px;
+}
+
+.mailing-btn {
+@extend %btn;
+box-shadow: 0ch;
+background-image: url(../images/send.svg);
+background-repeat: no-repeat;
+background-size: 24px;
+border: none;
+
+text-align: left;
+padding-left: 24px;
+background-position: right 28px bottom 13px;
+  
+&:hover {
+  color: #e4fa6a;
+  background-color: #0f1975;
+  border-color: #0f1975;
+}  
+}

@@ -1,0 +1,39 @@
+.properties {
+ @extend %padding-for-parts;
+}
+
+.properties-icon{
+ width: 270px;
+ height: 120px;
+ background-color: #F5F4FA;
+ margin-bottom: 30px;
+ text-align: center;
+}
+
+.properties-icon-svg{
+  margin-top: 25px;
+}
+
+.properties-list{
+  display: flex;
+  justify-content: space-between;
+  }
+
+.properties-list-item:not(:last-child){
+margin-right: 30px;
+}
+
+.properties-item-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color:$title-dark-color;
+  margin-bottom: 10px;
+}
+
+.properties-item-text {
+  color:$text-color;
+  font-weight: 400;
+  line-height: 1.71;
+}

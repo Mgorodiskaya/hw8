@@ -1,0 +1,64 @@
+%accent-color-for-link-and-btn {
+    color: $accent-color;
+}
+
+%adress-link-map {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color:$text-color;
+    transition: color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+}
+
+%header-icon{
+    fill:$text-color;
+    margin-right: 10px;
+  
+    transition: fill cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+}
+
+%display-flex {
+  display: flex;
+}
+
+%btn {
+    width: 200px;
+    height: 50px;
+    border-radius: 4px;
+    border-color:$accent-color;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    text-align: center;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+    color:$title-white-color;
+    background-color:$accent-color;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+%padding-for-parts {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+%text-in-footer{
+    font-family: Roboto;
+font-weight: 700;
+font-size: 14px;
+line-height: 1.14;
+text-transform: uppercase;
+
+color:$title-white-color;
+
+margin-bottom: 20px;
+}
+
+%center-with-margin {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
