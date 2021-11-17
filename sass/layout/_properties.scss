@@ -1,9 +1,5 @@
-.properties {
- @extend %padding-for-parts;
-}
-
 .properties-icon{
- width: 270px;
+ max-width: 480px;
  height: 120px;
  background-color: #F5F4FA;
  margin-bottom: 30px;
@@ -14,13 +10,13 @@
   margin-top: 25px;
 }
 
-.properties-list{
-  display: flex;
-  justify-content: space-between;
-  }
-
-.properties-list-item:not(:last-child){
-margin-right: 30px;
+.properties {
+ padding-top: 60px;
+ padding-bottom: 60px;
+ @media screen  and (min-width: 1199px){
+  padding-top: 94px;
+  padding-bottom: 94px;
+ }
 }
 
 .properties-item-title {
@@ -30,10 +26,51 @@ margin-right: 30px;
   text-transform: uppercase;
   color:$title-dark-color;
   margin-bottom: 10px;
+  text-align: center;
+ 
+  @media screen and (min-width: 1200px ){
+    text-align: left;
+  }
+
 }
 
 .properties-item-text {
   color:$text-color;
   font-weight: 400;
   line-height: 1.71;
+}
+
+@media screen and (max-width: 767px ) {
+  .properties-list-item:not(:last-child){
+margin-bottom: 30px;
+}
+}
+
+@media screen and (min-width: 768px ) and (max-width: 1199px ){
+.properties-list{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: -15px;
+  }
+  .properties-list-item{
+    width: 354px;
+    margin: 15px;
+  }
+}
+
+@media screen and (min-width: 1200px ){
+.properties-list{
+  display: flex;
+  justify-content: space-between;
+  }
+
+.properties-list-item{
+  width: 270px;
+  height: 251px;
+  &:not(:last-child){
+margin-right: 30px;
+}
+}
+
 }
