@@ -200,18 +200,33 @@
                 <ul class="team-list list">
                 <li class="team-item">
                     <div class="thumb">
-                       <picture>
-                       <source srcset="./images/our-team/our_team1-270.jpg 1x, 
-                       ./images/hero/our_team1-540.jpg 2x" media="min-width: 1200px" 
-                       sizes="(min-width: 1200px) 270px, 270px">
-                       <source srcset="./images/our-team/our_team1-354.jpg 1x, 
-                       ./images/hero/our_team1-708.jpg 2x" media="max-width: 1199px">
-                       <img src="images/our-team1.jpg" alt="Фото сотрудника Игоря">
+                       <picture class="team-foto-pic">
+                       <source 
+                       srcset="./images/our-team/our_team1-270.jpg 270w, 
+                               ./images/our-team/our_team1-540.jpg 540w" 
+                       type="image/jpeg"
+                       media="(min-width: 1200px)" 
+                       sizes="270px">
+                       <source 
+                       srcset="./images/our-team/our_team1-354.jpg 354w, 
+                       ./images/our-team/our_team1-708.jpg 708w" 
+                       media="(min-width: 767px)" 
+                       type="image/jpeg"
+                       sizes="354px">
+                       <source 
+                       srcset="./images/our-team/our_team1-450.jpg 450w, 
+                       ./images/our-team/our_team1-900.jpg 900w" 
+                       media="(min-width: 480px)"
+                       type="image/jpeg"
+                       sizes="(min-width: 480px) 450px, (min-width: 100px) 100vw">
+                       <img 
+                       srcset="./images/our-team/our_team1-450.jpg 450w, 
+                       ./images/our-team/our_team1-900.jpg 900w"
+                       src="images/our-team1-450.jpg" alt="Фото сотрудника Игоря"
+                       sizes="(min-width: 480px) 450px, (min-width: 100px) 100vw">
                    </picture>               
                     </div>
                   
-
-
                     <h3 class="team-item-title title">Игорь Демьяненко</h3>
                     <p class="team-item-text" lang="en">Product Designer</p>
                     <div class="social">
@@ -248,9 +263,35 @@
                                                                     
                     </div>
                 </li>
-                <!-- <li class="team-item">
-                    <img class="team-foto" src="images/our-team2.jpg" alt="Фото сотрудници Ольги" width="270" height="260">
-                    <h3 class="team-item-title title">Ольга Репина</h3>
+                <li class="team-item">
+                    <div class="thumb">
+                        <picture class="team-foto-pic">
+                        <source 
+                        srcset="./images/our-team/our_team2-270.jpg 270w, 
+                                ./images/our-team/our_team2-540.jpg 540w" 
+                        type="image/jpeg"
+                        media="(min-width: 1200px)" 
+                        sizes="270px">
+                        <source 
+                        srcset="./images/our-team/our_team2-354.jpg 354w, 
+                        ./images/our-team/our_team2-708.jpg 708w" 
+                        media="(min-width: 767px)" 
+                        type="image/jpeg"
+                        sizes="354px">
+                        <source 
+                        srcset="./images/our-team/our_team2-450.jpg 450w, 
+                        ./images/our-team/our_team2-900.jpg 900w" 
+                        media="(min-width: 480px)"
+                        type="image/jpeg"
+                        sizes="(min-width: 480px) 450px, (min-width: 100px) 100vw">
+                        <img 
+                        srcset="./images/our-team/our_team2-450.jpg 450w, 
+                        ./images/our-team/our_team2-900.jpg 900w"
+                        src="images/our-team2-450.jpg" alt="Фото сотрудници Ольги"
+                        sizes="(min-width: 480px) 450px, (min-width: 100px) 100vw">
+                    </picture>               
+                     </div>
+                     <h3 class="team-item-title title">Ольга Репина</h3>
                     <p class="team-item-text" lang="en">Frontend Developer</p>
                     <div class="social">
                         <ul class="social-list list">
@@ -288,9 +329,33 @@
                 </li>
                 <li class="team-item">
                     <div class="thumb">
-                      <img class="team-foto" src="images/our-team3.jpg" alt="Фото сотрудника Николая">
-                    </div>
-                   
+                        <picture class="team-foto-pic">
+                        <source 
+                        srcset="./images/our-team/our_team3-270.jpg 270w, 
+                                ./images/our-team/our_team3-540.jpg 540w" 
+                        type="image/jpeg"
+                        media="(min-width: 1200px)" 
+                        sizes="270px">
+                        <source 
+                        srcset="./images/our-team/our_team3-354.jpg 354w, 
+                        ./images/our-team/our_team3-708.jpg 708w" 
+                        media="(min-width: 767px)" 
+                        type="image/jpeg"
+                        sizes="354px">
+                        <source 
+                        srcset="./images/our-team/our_team3-450.jpg 450w, 
+                        ./images/our-team/our_team3-900.jpg 900w" 
+                        media="(min-width: 480px)"
+                        type="image/jpeg"
+                        sizes="(min-width: 480px) 450px, (min-width: 100px) 100vw">
+                        <img 
+                        srcset="./images/our-team/our_team3-450.jpg 450w, 
+                        ./images/our-team/our_team3-900.jpg 900w"
+                        src="images/our-team3-450.jpg" alt="Фото сотрудника Николая"
+                        sizes="(min-width: 480px) 450px, (min-width: 100px) 100vw">
+                    </picture>               
+                     </div>
+                                      
                     <h3 class="team-item-title title" >Николай Тарасов</h3>
                     <p class="team-item-text" lang="en">Marketing</p>
                     <div class="social">
@@ -328,7 +393,33 @@
                     </div>
                 </li>
                 <li class="team-item">
-                    <img class="team-foto" src="images/our-team4.jpg" alt="Фото сотрудника Михаила" width="270" height="260">
+                    <div class="thumb">
+                        <picture class="team-foto-pic">
+                        <source 
+                        srcset="./images/our-team/our_team4-270.jpg 270w, 
+                        ./images/our-team/our_team4-540.jpg 540w" 
+                        type="image/jpeg"
+                        media="(min-width: 1200px)" 
+                        sizes="270px">
+                        <source 
+                        srcset="./images/our-team/our_team4-354.jpg 354w, 
+                        ./images/our-team/our_team4-708.jpg 708w" 
+                        media="(min-width: 767px)" 
+                        type="image/jpeg"
+                        sizes="354px">
+                        <source 
+                        srcset="./images/our-team/our_team4-450.jpg 450w, 
+                        ./images/our-team/our_team4-900.jpg 900w" 
+                        media="(min-width: 480px)"
+                        type="image/jpeg"
+                        sizes="(min-width: 480px) 450px, (min-width: 100px) 100vw">
+                        <img 
+                        srcset="./images/our-team/our_team4-450.jpg 450w, 
+                        ./images/our-team/our_team4-900.jpg 900w"
+                        src="images/our-team4-450.jpg" alt="Фото сотрудника Михаила"
+                        sizes="(min-width: 480px) 450px, (min-width: 100px) 100vw">
+                    </picture>               
+                     </div>
                     <h3 class="team-item-title" >Михаил Ермаков</h3>
                     <p class="team-item-text" lang="en">UI Designer</p>
                     <div class="social">
@@ -365,7 +456,7 @@
                                                                     
                     </div>
                 </li>
-            </ul>   -->
+            </ul>  
             </div>
         </section>
         <!-- <section class="clients">
