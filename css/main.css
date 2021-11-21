@@ -338,7 +338,7 @@ img {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
-.team, .clients {
+.clients {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -671,7 +671,7 @@ img {
 
 @media screen and (min-width: 767px) and (max-width: 1199px) {
   .hero {
-    width: 780px;
+    max-width: 1200px;
     height: 400px;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero_plan.jpg);
   }
@@ -792,6 +792,16 @@ img {
   }
 }
 
+.work {
+  display: none;
+}
+
+@media screen and (min-width: 1200px) {
+  .work {
+    display: block;
+  }
+}
+
 .work-title,
 .team-title,
 .client-title {
@@ -853,56 +863,41 @@ img {
 }
 
 .team {
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: #F5F4FA;
 }
 
-.team-list {
-  display: flex;
-  justify-content: space-between;
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
-.team-item {
-  background-color: #ffffff;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  padding-bottom: 30px;
-}
-
-.team-foto {
+.thumb {
+  display: inline-block;
   margin-bottom: 30px;
 }
 
-.team-item-title {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.19;
-  text-align: center;
-  color: #212121;
-  margin-bottom: 10px;
+@media screen and (max-width: 767px) {
+  .thumb {
+    width: 450px;
+    height: 460px;
+  }
 }
 
-.team-item-text {
-  font-size: 16px;
-  line-height: 1.19;
-  text-align: center;
-  color: #757575;
-  margin-bottom: 16px;
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .thumb {
+    width: 354px;
+    height: 374px;
+  }
 }
 
-.social-list {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding-left: 32px;
-  padding-right: 32px;
-}
-
-.social-link {
-  background-color: #ffffff;
-  transition: background-color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
-}
-
-.social-icon {
-  fill: #AFB1B8;
+@media screen and (min-width: 1200px) {
+  .thumb {
+    width: 270px;
+    height: 260px;
+  }
 }
 
 .clients-list {

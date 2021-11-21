@@ -168,8 +168,8 @@
                 </ul>
             </div>
            -->
-        <!-- </section>
-        <!-- <section class="work">
+         </section>
+        <section class="work">
             <div class="container">
                <h2 class="work-title title">Чем мы занимаемся</h2>
                <ul class="work-list list">
@@ -193,13 +193,25 @@
                     </li>
                </ul>  
             </div>
-        </section> -->
-        <!-- <section class="team">
+        </section>
+        <section class="team">
             <div class="container">
                <h2 class="team-title title">Наша команда</h2>
                 <ul class="team-list list">
                 <li class="team-item">
-                    <img class="team-foto" src="images/our-team1.jpg" alt="Фото сотрудника Игоря" width="270" height="260">
+                    <div class="thumb">
+                       <picture>
+                       <source srcset="./images/our-team/our_team1-270.jpg 1x, 
+                       ./images/hero/our_team1-540.jpg 2x" media="min-width: 1200px" 
+                       sizes="(min-width: 1200px) 270px, 270px">
+                       <source srcset="./images/our-team/our_team1-354.jpg 1x, 
+                       ./images/hero/our_team1-708.jpg 2x" media="max-width: 1199px">
+                       <img src="images/our-team1.jpg" alt="Фото сотрудника Игоря">
+                   </picture>               
+                    </div>
+                  
+
+
                     <h3 class="team-item-title title">Игорь Демьяненко</h3>
                     <p class="team-item-text" lang="en">Product Designer</p>
                     <div class="social">
@@ -236,7 +248,7 @@
                                                                     
                     </div>
                 </li>
-                <li class="team-item">
+                <!-- <li class="team-item">
                     <img class="team-foto" src="images/our-team2.jpg" alt="Фото сотрудници Ольги" width="270" height="260">
                     <h3 class="team-item-title title">Ольга Репина</h3>
                     <p class="team-item-text" lang="en">Frontend Developer</p>
@@ -275,7 +287,10 @@
                     </div>
                 </li>
                 <li class="team-item">
-                    <img class="team-foto" src="images/our-team3.jpg" alt="Фото сотрудника Николая" width="270" height="260">
+                    <div class="thumb">
+                      <img class="team-foto" src="images/our-team3.jpg" alt="Фото сотрудника Николая">
+                    </div>
+                   
                     <h3 class="team-item-title title" >Николай Тарасов</h3>
                     <p class="team-item-text" lang="en">Marketing</p>
                     <div class="social">
@@ -350,9 +365,9 @@
                                                                     
                     </div>
                 </li>
-            </ul>  
+            </ul>   -->
             </div>
-        </section> -->
+        </section>
         <!-- <section class="clients">
             <div class="container">
                  <h2 class="client-title title">Постоянные клиенты</h2>
