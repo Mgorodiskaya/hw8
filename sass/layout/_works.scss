@@ -9,17 +9,14 @@ display: none;
     }
 }
 
-.work-title,
-.team-title,
-.client-title{
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  color:$title-dark-color;
+.work-title{
+  @extend %title;
+  @media screen and (min-width: 1199px) {
+   font-size: 36px;
+ }
+ }
 
-  margin-bottom: 50px;
-}
+ 
 
 .work-list {
   display: flex;
